@@ -8,7 +8,7 @@ The code is in a Jupyter Notebook so simply open it using Anaconda and run each 
 Example data 1 is from: https://www.fmrib.ox.ac.uk/primers/intro_primer/ExBox14/ExBox14.zip
 This example data contains 3 NIfTI files: the original MRI data, the MRI data of just the brain and a file of the mask. The file names are listed as T1.nii , T1_brain.nii and T1_brain_mask.nii.
 
-TO USE THE ExBox14 FILES EITHER DOWNLOAD FROM ABOVE LINK AND UNZIP THE FILE OR DOWNLOAD AND UNZIP FILES FROM THIS GUTHUB REPOSITORY. THEN MOVE THE RESULTING FILES TO THE DESIRED LOCATION ON YOUR LOCAL DRIVE, THEN SPECIFY THE LOCATION IN THE FOUR POINTS IN THE SCRIPT THAT HAVE THE HARD CODED FILE PATH FOR THE EPI BRAIN IMAGE, HEAD IMAGE AND THE MASK. 
+TO USE THE ExBox14 FILES EITHER DOWNLOAD FROM ABOVE LINK AND UNZIP THE FILE OR DOWNLOAD AND UNZIP FILES FROM THIS GITHUB REPOSITORY. THEN MOVE THE RESULTING FILES TO THE DESIRED LOCATION ON YOUR LOCAL DRIVE, THEN SPECIFY THE LOCATION IN THE FOUR POINTS IN THE SCRIPT THAT HAVE THE HARD CODED FILE PATH FOR THE EPI BRAIN IMAGE, HEAD IMAGE AND THE MASK. 
 
 First, the example data file's image is explored (voxel dimensions and data type) then the image data itself was loaded using NiBabel. Following this, the image data dimensions are checked to ensure it matches the image dimensions. Nilearn is used to plot the epi images (epi=echo-planar imaging). As 3D data can be difficult to manipulate, the code also turns the 3D epi data into a 2D array which can be taken on further for easier data analysis. The mask data file is then loaded, checked and set to boolean. The mask is then applied to the example data by indexing and the result is plotted. Next, the example dataset is used to visualise volumes and generate a mask.
 
